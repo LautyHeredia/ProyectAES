@@ -6,9 +6,9 @@ const routes = require("../routes/index");
 
 const server = express();
 
-server.use(bodyParser.urlencoded({ extended: true }));
-server.use(bodyParser.json());
-server.use(express.json());
+server.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+server.use(bodyParser.json({ limit: "50mb" }));
+server.use(cookieParser());
 server.use(morgan("dev"));
 
 server.use((req, res, next) => {
