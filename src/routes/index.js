@@ -8,7 +8,7 @@ routes.use("/users", userRoute);
 routes.use("/auth", authRoute);
 
 routes.get("/", (req, res) => {
-  res.status(200).json("this root page");
+  res.send("this root page");
 });
 
 module.exports = routes;

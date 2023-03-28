@@ -1,0 +1,7 @@
+# fly.toml file generated for projectaes on 2023-03-28T17:24:20-05:00
+
+app = "projectaes"
+primary_region = "scl"
+
+[env]
+  PORT = "8080"

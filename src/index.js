@@ -1,7 +1,7 @@
 const server = require("./config/app");
-const { APP_PORT, APP_ENV } = require("./config/variable.env");
+const { APP_PORT } = require("./config/variable.env");
 require("./config/database");
-
-server.listen(APP_PORT, () => {
-  console.log(`your application runing ${APP_ENV} ,${APP_PORT}`);
+const port = APP_PORT || process.env.PORT;
+server.listen(port, () => {
+  console.log(`your application runing ,${port}`);
 });
