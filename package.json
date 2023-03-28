@@ -1,0 +1,28 @@
+{
+  "name": "api-rest",
+  "version": "0.0.0",
+  "description": "this project is test api-rest with express and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec node",
+    "start": "node ./index.js"
+  },
+  "author": "SergioAi <53959551+Spai26@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "body-parser": "^1.20.2",
+    "nodemon": "^2.0.21",
+    "cookie-parser": "^1.4.6"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.2",
+    "morgan": "^1.10.0"
+  },
+  "repository": "https://github.com/Spai26/ProjectAES.git"
+}
