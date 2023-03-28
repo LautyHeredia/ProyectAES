@@ -8,7 +8,7 @@ const server = express();
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
-server.use(cookieParser());
+server.use(express.json());
 server.use(morgan("dev"));
 
 server.use((req, res, next) => {
